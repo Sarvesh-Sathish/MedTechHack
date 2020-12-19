@@ -14,7 +14,6 @@
         <TextView
             android:layout_width="230dp"
             android:layout_height="50dp"
-            android:layout_below="@+id/null"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
@@ -34,7 +33,6 @@
         <TextView
             android:layout_width="230dp"
             android:layout_height="50dp"
-            android:layout_above="@+id/null"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -54,14 +52,21 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_below="@+id/null"
             android:layout_alignParentBottom="true"
             app:cardCornerRadius="15dp"
-            app:cardBackgroundColor="#FF5722"
+
             android:layout_marginLeft="24dp"
             android:layout_marginTop="49dp"
             android:layout_marginRight="24dp"
-            android:layout_marginBottom="406dp"></androidx.cardview.widget.CardView>
+            android:layout_marginBottom="406dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/main_gradient"
+                android:layout_height="match_parent"></LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
